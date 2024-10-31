@@ -5,7 +5,7 @@
 #include <linux/cdev.h>
 
 #define dev_name "recur"
-#define RECUR_MAGIC 0x5b
+#define RECUR_MAGIC 0x7b
 #define RECUR_RESET _IO(RECUR_MAGIC, 0)
 #define RECUR_INDEX _IOR(RECUR_MAGIC, 1, int)
 

@@ -1,4 +1,4 @@
-# recur.c
+# recurCharDriver: recur.c
 
 ## Overview
 recur.c is a Linux kernel module that creates a character device to output recursive patterns. This device can track sequences, reset them, and provide an index-based pattern of numbers. The module allows multiple device instances and offers configurable parameters for ease of use.
@@ -10,6 +10,11 @@ Dynamic Major Number Allocation: Configurable through a module parameter.
 Multiple Device Instances: Allows setting the number of /dev/recur instances.
 
 ## Installation
+### Clone repo
+```
+git clone https://github.com/AalmanSadath/recurCharDriver && cd recurCharDriver
+```
+
 ### Compile the Module:
 ```
 make
@@ -28,4 +33,6 @@ The module will automatically create and intitialize file permissions to 666 for
 ## Module Parameters
 max_devices: Sets the number of /dev/recur device instances.
 param_major_num: Sets the major device number (use 0 for dynamic allocation).
+
+## Usage
 
